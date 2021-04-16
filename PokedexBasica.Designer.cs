@@ -173,7 +173,7 @@
             this.tipoPrincipal.BackColor = System.Drawing.Color.Transparent;
             this.tipoPrincipal.Location = new System.Drawing.Point(518, 85);
             this.tipoPrincipal.Name = "tipoPrincipal";
-            this.tipoPrincipal.Size = new System.Drawing.Size(55, 66);
+            this.tipoPrincipal.Size = new System.Drawing.Size(66, 66);
             this.tipoPrincipal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.tipoPrincipal.TabIndex = 12;
             this.tipoPrincipal.TabStop = false;
@@ -183,7 +183,7 @@
             this.tipoSecundario.BackColor = System.Drawing.Color.Transparent;
             this.tipoSecundario.Location = new System.Drawing.Point(518, 157);
             this.tipoSecundario.Name = "tipoSecundario";
-            this.tipoSecundario.Size = new System.Drawing.Size(55, 66);
+            this.tipoSecundario.Size = new System.Drawing.Size(66, 66);
             this.tipoSecundario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.tipoSecundario.TabIndex = 13;
             this.tipoSecundario.TabStop = false;

@@ -53,10 +53,8 @@ namespace PruebaBBDD
             //Cambiar la foto del tipo principal del pokemon
             tipo1.Text = pokemonElegido.Rows[0]["tipo1"].ToString();
             if (tipo1.Text == "Bicho") { this.tipoPrincipal.Image = System.Drawing.Image.FromFile("f:/Pokedex/Bicho.png"); }
-            if (tipo1.Text == "Siniestro") { this.tipoPrincipal.Image = System.Drawing.Image.FromFile("f:/Pokedex/Oscuridad.png"); }
             if (tipo1.Text == "Dragon") { this.tipoPrincipal.Image = System.Drawing.Image.FromFile("f:/Pokedex/Dragon.png"); }
             if (tipo1.Text == "Electrico") { this.tipoPrincipal.Image = System.Drawing.Image.FromFile("f:/Pokedex/Electrico.png"); }
-            if (tipo1.Text == "Hada") { this.tipoPrincipal.Image = System.Drawing.Image.FromFile("f:/Pokedex/Hada.png"); }
             if (tipo1.Text == "Lucha") { this.tipoPrincipal.Image = System.Drawing.Image.FromFile("f:/Pokedex/Lucha.png"); }
             if (tipo1.Text == "Fuego") { this.tipoPrincipal.Image = System.Drawing.Image.FromFile("f:/Pokedex/Fuego.png"); }
             if (tipo1.Text == "Volador") { this.tipoPrincipal.Image = System.Drawing.Image.FromFile("f:/Pokedex/Volador.png"); }
@@ -75,10 +73,8 @@ namespace PruebaBBDD
             //Cambiar la foto del tipo secundario del pokemon
             tipo2.Text = pokemonElegido.Rows[0]["tipo2"].ToString();
             if (tipo2.Text == "Bicho") { this.tipoSecundario.Image = System.Drawing.Image.FromFile("f:/Pokedex/Bicho.png"); }
-            if (tipo2.Text == "Siniestro") { this.tipoSecundario.Image = System.Drawing.Image.FromFile("f:/Pokedex/Oscuridad.png"); }
             if (tipo2.Text == "Dragon") { this.tipoSecundario.Image = System.Drawing.Image.FromFile("f:/Pokedex/Dragon.png"); }
             if (tipo2.Text == "Electrico") { this.tipoSecundario.Image = System.Drawing.Image.FromFile("f:/Pokedex/Electrico.png"); }
-            if (tipo2.Text == "Hada") { this.tipoSecundario.Image = System.Drawing.Image.FromFile("f:/Pokedex/Hada.png"); }
             if (tipo2.Text == "Lucha") { this.tipoSecundario.Image = System.Drawing.Image.FromFile("f:/Pokedex/Lucha.png"); }
             if (tipo2.Text == "Fuego") { this.tipoSecundario.Image = System.Drawing.Image.FromFile("f:/Pokedex/Fuego.png"); }
             if (tipo2.Text == "Volador") { this.tipoSecundario.Image = System.Drawing.Image.FromFile("f:/Pokedex/Volador.png"); }
@@ -108,7 +104,7 @@ namespace PruebaBBDD
         private void evo_Click(object sender, EventArgs e)
         {
             Evolucion ventana = new Evolucion(idActual);
-            ventana.id = idActual;
+            ventana.idActual = idActual;
             ventana.Show();
         }
     }
