@@ -47,6 +47,10 @@ namespace PruebaBBDD
             DataTable pokemonElegido = miConexion.getPokemonPorId(idActual);
             nombrePokemon.Text = pokemonElegido.Rows[0]["nombre"].ToString();
             fotoPokemon.Image = convierteBlobAImagen((byte[])pokemonElegido.Rows[0]["imagen"]);
+            altura.Text = pokemonElegido.Rows[0]["altura"].ToString() + " m";
+            peso.Text = pokemonElegido.Rows[0]["peso"].ToString() + " kg";
+            numPokemon.Text = pokemonElegido.Rows[0]["id"].ToString();
+            curiosidad.Text = pokemonElegido.Rows[0]["descripcion"].ToString();
         }
 
         private Image convierteBlobAImagen(byte[] img) {
@@ -54,6 +58,22 @@ namespace PruebaBBDD
         }
 
         private void fotoPokemon_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Altura_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PokedexCompleta_Click(object sender, EventArgs e)
+        {
+            Form1 ventana = new Form1();
+            ventana.Show();
+        }
+
+        private void altura_Click_1(object sender, EventArgs e)
         {
 
         }
