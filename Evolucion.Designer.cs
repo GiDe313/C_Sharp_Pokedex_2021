@@ -54,7 +54,6 @@ namespace PruebaBBDD
             this.fotoPokemon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.fotoPokemon.TabIndex = 0;
             this.fotoPokemon.TabStop = false;
-            this.fotoPokemon.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // Pre1
             // 
