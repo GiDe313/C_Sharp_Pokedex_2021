@@ -13,12 +13,12 @@ namespace PruebaBBDD
     public partial class Evolucion : Form
     {
         Conexion miConexion = new Conexion();
-        int idActual = 2;
+        int id = 0;
         int pre1 = 0;
         int pre2 = 0;
         int ev1 = 0;
         int ev2 = 0;
-        public Evolucion()
+        public Evolucion(int idActual)
         {
             InitializeComponent();
             lineaEvol();
@@ -26,12 +26,12 @@ namespace PruebaBBDD
 
         private void lineaEvol()
         {
-            DataTable pokemonElegido = miConexion.getPokemonPorId(idActual);
+            DataTable pokemonElegido = miConexion.getPokemonPorId(id);
             fotoPokemon.Image = convierteBlobAImagen((byte[])pokemonElegido.Rows[0]["imagen"]);
 
             if (pokemonElegido.Rows[0]["posEvolucion"] != DBNull.Value)
             {
-                DataTable pokemonElegido2 = miConexion.getPokemonPorId(idActual - 1);
+                DataTable pokemonElegido2 = miConexion.getPokemonPorId(id - 1);
                 Pre1.Image = convierteBlobAImagen((byte[])pokemonElegido2.Rows[0]["imagen"]);
             }
             if (fotoPokemon == Pre1)
@@ -41,7 +41,7 @@ namespace PruebaBBDD
 
             if (pokemonElegido.Rows[0]["posEvolucion"] != DBNull.Value)
             {
-                DataTable pokemonElegido2 = miConexion.getPokemonPorId(idActual + 1);
+                DataTable pokemonElegido2 = miConexion.getPokemonPorId(id + 1);
                 Ev1.Image = convierteBlobAImagen((byte[])pokemonElegido2.Rows[0]["imagen"]);
             }
             if (fotoPokemon == Ev1)

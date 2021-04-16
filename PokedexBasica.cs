@@ -80,7 +80,7 @@ namespace PruebaBBDD
 
         private void evo_Click(object sender, EventArgs e)
         {
-            Evolucion ventana = new Evolucion();
+            Evolucion ventana = new Evolucion(idActual);
             ventana.Show();
         }
     }
