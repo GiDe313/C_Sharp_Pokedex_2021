@@ -46,11 +46,16 @@ namespace PruebaBBDD
         private void asignaPokemon() {
             DataTable pokemonElegido = miConexion.getPokemonPorId(idActual);
             nombrePokemon.Text = pokemonElegido.Rows[0]["nombre"].ToString();
-            pictureBox1.Image = convierteBlobAImagen((byte[])pokemonElegido.Rows[0]["imagen"]);
+            fotoPokemon.Image = convierteBlobAImagen((byte[])pokemonElegido.Rows[0]["imagen"]);
         }
 
         private Image convierteBlobAImagen(byte[] img) {
             return (Image.FromStream(new System.IO.MemoryStream(img)));
+        }
+
+        private void fotoPokemon_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

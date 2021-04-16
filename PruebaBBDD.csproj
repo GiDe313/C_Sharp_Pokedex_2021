@@ -127,6 +127,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="VentanaPrincipal.resx">
       <DependentUpon>VentanaPrincipal.cs</DependentUpon>
@@ -146,61 +147,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\PokedexHUD.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Agua.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Bicho.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Dragon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Electrico.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Fantasma.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Fuego.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Hada.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Hielo.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Lucha.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Metal.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Normal.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Oscuridad.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Planta.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Psiquico.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Roca.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Tierra.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Veneno.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Volador.png" />
+    <None Include="Resources\Pokedex.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
