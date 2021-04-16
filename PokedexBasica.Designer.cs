@@ -107,6 +107,7 @@
             this.evo.TabIndex = 5;
             this.evo.Text = "Linea de evolución";
             this.evo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.evo.Click += new System.EventHandler(this.evo_Click);
             // 
             // labelPeso
             // 

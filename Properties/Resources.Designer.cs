@@ -79,5 +79,15 @@ namespace PruebaBBDD.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PokedexEvoluciones {
+            get {
+                object obj = ResourceManager.GetObject("PokedexEvoluciones", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
